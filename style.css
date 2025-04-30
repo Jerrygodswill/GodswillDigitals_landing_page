@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+:root {
+  --normal-font: 400;
+  --bold-font: 600;
+  --bolder-font: 900;
+  --primary-color: #0652dd;
+  --secondary-color: #04193aa2;
+  --line-height: 1.7rem;
+  --transition: 0.4s ease-in;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: var(--transition);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  box-shadow: 2px 3px 2px #676565;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1; 
+  background-image: url(img/F.png);
+  background-attachment: fixed;
+  background-size: 5%;
+  background-repeat: no-repeat;
+  background-color: #f0e5e5;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+}
+
+ul {
+  list-style-type: none;
+}
+  
+li a {
+    display: block;
+    color: rgb(55, 57, 93);
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+
+img {
+    max-width: 5%;
+    height:auto;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #b6b4b4;
+  }
+
+body {
+    font-family: "Roboto", sans-serf;
+  }
+#Godswill {
+    font-size: 25px;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #082355;
+    margin-left: 55px;
+  }
+
+#Digitals {
+    font-size: 15px;
+    font-style: italic;
+    color: #480303;
+    margin-left: 3px;
+  }
+
+.nav-item {
+  margin-left: 2rem;
+  font-size: small;
+}
+
+.nav-link {
+  font-weight: var(--bold-font);
+}
+p{
+  font-size: 20px;
+}
+
+.hero {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 1.9rem;
+max-width: 1100px;
+margin: 2rem auto -6rem;
+}
+
+.Code{
+  font-style: normal;
+  font-size: 40px;
+  color: #372b2b;
+  margin-bottom: 3rem;
+}
+.Deploy{
+  font-style: normal;
+  font-size: 25px;
+  color: #2e3238;
+  margin-bottom: 0.5rem;
+}
+.hero p {
+  line-height: var(--line-height);
+}
+#setup img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30%;
+}
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 0.6rem;
+  border: none;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  color: #ddd9d9;
+  background-color: #272424;
+}
+
+.btn:hover{
+  color: #999898;
+}
+
+
+.about{
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 1.9rem;
+max-width: 1100px;
+margin: 2rem auto 2rem;
+}
+
+#aboutimg img{
+  max-width: 80%;
+  height: auto;
+ border-bottom-right-radius: 80px;
+}
+
+.about #abouttext{
+  font-style: normal;
+  font-size: 25px;
+  color: #2e3238;
+  margin-bottom: 0.5rem;
+}
+
+.subscribe{
+  background-image: url(img/background\ img.jpg);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 3rem 0;
+  position: relative;
+  background-size: 100% 100%;
+  border-radius: 50px;
+  }
+.subscribe h3{
+  color: #ddd9d9;
+  text-align: center;
+}
+
+.subscribe p{
+  color: #ddd9d9;
+  text-align: center;
+}
+
+.social-icons {
+  text-align: center;
+  padding: 0;
+  background-color: #6a6161;
+  border-radius: 12px;
+  max-width: 350px;
+  margin: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+  
+
+.social-icons p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.icons-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.icons-wrapper a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%;
+}
+
+.icons-wrapper a img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px;
+  color: #a19c9c;
+}
+
+footer {
+  border-top: 1px solid #f1f1f1;
+  box-shadow: 0px -2px 3px #f1f1f1;
+  text-align: center;
+  padding: 2rem;
+}
